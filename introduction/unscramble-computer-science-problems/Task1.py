@@ -11,14 +11,15 @@ with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
     calls = list(reader)
 
-numbers = []
 
-for num in texts:
-    numbers.extend(texts[num[:2]])
-for num in calls:
-    numbers.extend(calls[num[:2]])
+phone_numbers = []
 
-unique_num_cnt = len(set(numbers))
+for data in texts:
+    phone_numbers.extend(data[:2])
+for data in calls:
+    phone_numbers.extend(data[:2])
+
+unique_num_cnt = len(set(phone_numbers))
 
 """
 TASK 1:
