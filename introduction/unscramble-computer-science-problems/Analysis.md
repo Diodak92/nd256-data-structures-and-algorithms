@@ -1,104 +1,22 @@
+### Analysis for Worst Case scenario - Big-O Notation
+
 ## Task0
 
-First record of texts, 97424 22395 texts 90365 06212 at time 01-09-2016 06:03:22
-Last record of calls, 98447 62998 calls (080)46304537 at time 30-09-2016 23:57:15, lasting 2151 seconds
+The function simply returns the first and last elements from the list without any sorting, so its time complexity is constant O(1).
 
 ## Task1
 
-There are 570 different telephone numbers in the records.
+The script iterates over the list of calls O(n) and the list of texts O(p) sequentially, each loop having linear time complexity. Finally, the program converts a list to a set, which also requires linear time O(r).
+Overall, the complexity remains linear, growing proportionally to the combined sizes of the calls and texts lists.
 
 ## Task2
 
-(04546)388977 spent the longest time, 4617 seconds, on the phone during September 2016
+The script iterates over all elements in the list to find the maximum value. Therefore, its time complexity grows linearly with the size of the list O(n).
 
 ## Task3
 
-The numbers called by people in Bangalore have codes:
-- (022)
-- (040)
-- (04344)
-- (044)
-- (04546)
-- (0471)
-- (080)
-- (0821)
-- 7406
-- 7795
-- 7813
-- 7829
-- 8151
-- 8152
-- 8301
-- 8431
-- 8714
-- 9008
-- 9019
-- 9035
-- 9036
-- 9241
-- 9242
-- 9341
-- 9342
-- 9343
-- 9400
-- 9448
-- 9449
-- 9526
-- 9656
-- 9738
-- 9740
-- 9741
-- 9742
-- 9844
-- 9845
-- 9900
-- 9961
-
-24.81% percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.
+The third script contains two loops, each with linear time complexity O(n), as well as time constant calculations O(1). Then, the overall time complexity is still linear.
 
 ## Task4
 
-These numbers could be telemarketers: 
-- (022)37572285
-- (022)65548497
-- (022)68535788
-- (022)69042431
-- (040)30429041
-- (044)22020822
-- (0471)2171438
-- (0471)6579079
-- (080)20383942
-- (080)25820765
-- (080)31606520
-- (080)40362016
-- (080)60463379
-- (080)60998034
-- (080)62963633
-- (080)64015211
-- (080)69887826
-- (0821)3257740
-- 1400481538
-- 1401747654
-- 1402316533
-- 1403072432
-- 1403579926
-- 1404073047
-- 1404368883
-- 1404787681
-- 1407539117
-- 1408371942
-- 1408409918
-- 1408672243
-- 1409421631
-- 1409668775
-- 1409994233
-- 74064 66270
-- 78291 94593
-- 87144 55014
-- 90351 90193
-- 92414 69419
-- 94495 03761
-- 97404 30456
-- 97407 84573
-- 97442 45192
-- 99617 25274
+The last script contains three loops, each with linear time complexity O(n). Therefore, the overall time complexity remains linear O(n).
