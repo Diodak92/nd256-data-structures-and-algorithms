@@ -1,4 +1,4 @@
-### Analysis for Worst Case scenario - Big-O Notation
+###  Worst Case Scenario Analysis - Big-O Notation
 
 ## Task0
 
