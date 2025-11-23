@@ -22,13 +22,14 @@ September 2016.".
 
 max_call_length = None
 ph_num = None
+ph_call_dict = {}
 
 for data in calls:
-    if not max_call_length:
-        max_call_length = int(data[-1])
-        ph_num = data[1]
-    if int(data[-1]) > max_call_length:
-        max_call_length = int(data[-1])
-        ph_num = data[1]
+    ph_call_dict[data[0]] = ph_call_dict.get(data[0], 0) + int(data[-1])
+    ph_call_dict[data[1]] = ph_call_dict.get(data[1], 0) + int(data[-1])
+
+ph_num, max_call_length = max(ph_call_dict.items(), key=lambda x : x[1])
+
+#print(sorted(list(ph_call_dict.values())))
 
 print(f"{ph_num} spent the longest time, {max_call_length} seconds, on the phone during September 2016")
